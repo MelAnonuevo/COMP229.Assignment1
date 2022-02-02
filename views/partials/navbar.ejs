@@ -1,0 +1,66 @@
+
+
+<body>
+    <!-- Main Nav bar  -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img src="/images/logo.PNG" alt="logo" style="width:40px;">
+      </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>                     <!--hump burger button -->
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+      
+      <!-- Links -->
+      <li class="nav-item">
+        <% if (title == "Home") { %>
+            <a class="nav-link active" href="/home">
+        <% } else { %>
+            <a class="nav-link" href="/home">
+        <% } %>            
+            <i class="fas fa-home"></i> Home </a>
+        </a>
+      </li>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <% if (title == "Projects") { %>
+              <a class="nav-link active" href="/projects">
+          <% } else { %>
+              <a class="nav-link" href="/projects">
+          <% } %>            
+            <i class="fas fa-project-diagram"></i> Projects </a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <% if (title == "Services") { %>
+              <a class="nav-link active" href="/services">
+          <% } else { %>
+              <a class="nav-link" href="/services">
+          <% } %>            
+              <i class="fas fa-home"></i> Services </a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <% if (title == "About") { %>
+              <a class="nav-link active" href="/about">
+          <% } else { %>
+              <a class="nav-link" href="/about">
+          <% } %>            
+              <i class="fas fa-home"></i> About </a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <% if (title == "Contact") { %>
+              <a class="nav-link active" href="/contact">
+          <% } else { %>
+              <a class="nav-link" href="/contact">
+          <% } %>            
+              <i class="fas fa-user"></i> Contact </a>
+          </a>
+        </li>
+        
+      </ul>
+    </nav>

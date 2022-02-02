@@ -9,14 +9,12 @@ let indexController = require('../controllers/index');
 
 
 /* GET home page. */
-router.get('/', indexController.home );
+router.get('/home', indexController.home );
 
 /* GET Project page. */
 router.get('/projects', indexController.projects);
 
 /* GET About page. */
-router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
-});
+router.get('/about', indexController.about);
 
 module.exports = router;
