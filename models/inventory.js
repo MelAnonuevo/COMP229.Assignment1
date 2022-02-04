@@ -11,7 +11,7 @@ let inventoryModel = mongoose.Schema(
             w: Number,
             uom: String
         },
-        status: String,
+        status: String
     },
     {
         collection: "inventory"
