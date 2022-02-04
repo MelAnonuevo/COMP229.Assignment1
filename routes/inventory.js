@@ -8,7 +8,7 @@ let mongoose = require('mongoose');
 let Inventory = require('../models/inventory');
 
 router.get('/list', function(req, res, next){
-    inventory.find((err, inventoryList) => {
+    Inventory.find((err, inventoryList) => {
         // console.log(inventoryList);
         if(err)
         {
@@ -18,7 +18,7 @@ router.get('/list', function(req, res, next){
         {
             console.log(inventoryList);
         }
-    })
+    });
     res.render('index', {title: 'About'});
 });
 
