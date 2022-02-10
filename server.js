@@ -4,6 +4,10 @@
  * Module dependencies.
  */
 
+// Author: Mel Vincent Anonuevo
+// Student ID: 301167069
+// Date: Feb 1, 2022
+
 var app = require('./config/app');
 var debug = require('debug')('expressportfolio:server');
 var http = require('http');
