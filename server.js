@@ -8,7 +8,8 @@
 // Student ID: 301167069
 // Date: Feb 1, 2022
 
-var app = require('./config/app');
+var dbConfig = require('./config/db');
+var appConfig = require('./config/app');
 var debug = require('debug')('expressportfolio:server');
 var http = require('http');
 
@@ -16,8 +17,9 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
+let db = dbConfig;
 var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+appConfig.set('port', port);
 
 /**
  * Create HTTP server.

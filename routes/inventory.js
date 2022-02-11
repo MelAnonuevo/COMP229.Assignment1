@@ -4,26 +4,8 @@
 
 let express = require('express');
 let router = express.Router();
+let inventoryController = require('../controllers/inventory');
 
-let mongoose = require('mongoose');
-// const { router } = require('../config/app');
-// let inventory = require('../models/inventory');
+router.get('/list', inventoryController.list);
 
-let Inventory = require('../models/inventory');
-
-router.get('/list', function(req, res, next){
-    Inventory.find((err, inventoryList) => {
-        // console.log(inventoryList);
-        if(err)
-        {
-            return console.error(err);
-        }
-        else
-        {
-            console.log(inventoryList);
-        }
-    });
-    res.render('index', {title: 'About'});
-});
-
-module.exports = router;
+module.exports = mongoose.model('inventory', inventorymodel);
