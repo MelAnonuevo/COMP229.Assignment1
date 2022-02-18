@@ -1,10 +1,11 @@
 <!-- // Author: Mel Vincent Anonuevo
 // Student ID: 301167069
 // Date: Feb 17, 2022 -->
-
+<% include ../partials/navbar.ejs %>
+<% include ../partials/header.ejs %>
 <!-- Main Content -->
 <main class="container">
-    <div class="row">
+    <div class="row" style="color: yellow;">
         <h1><%= title %></h1>
         <br>
         <div>
@@ -14,16 +15,16 @@
             </a>                
         </div>
 
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover">
+        <div class="table-responsive" style="color: yellow;" >
+            <table class="table table-bordered table-striped table-hover" style="color: yellow;">
                 <!-- Header Row-->
                 <tr>
-                    <th class="text-center">Item</th>
-                    <th class="text-center">Qty</th>
-                    <th class="text-center">Status</th>
-                    <th>Size</th>
-                    <th class="text-center">Tags</th>
-                    <th class="text-center" colspan="2">Actions</th>
+                    <th class="text-center" style="color: yellow;">Item</th>
+                    <th class="text-center"style="color: yellow;">Qty</th>
+                    <th class="text-center"style="color: yellow;">Status</th>
+                    <th style="color: yellow;">Size</th>
+                    <th class="text-center"style="color: yellow;">Tags</th>
+                    <th class="text-center" colspan="2"style="color: yellow;">Actions</th>
                 </tr>
 
                 <!-- Repeatable Template Row -->
@@ -53,3 +54,4 @@
         </div>
     </div>
   </main>
+  <% include ../partials/btmnav.ejs %>
