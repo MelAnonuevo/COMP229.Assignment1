@@ -36,7 +36,8 @@
 
 body {              /* css modification for body of whole website */
     /* background-color: blanchedalmond; */
-    background-image: url("/images/bg.png");
+    /* /background-image: url("/images/bg.png"); */
+    background-color: rgb(109, 106, 101);
 
     /* Add the blur effect
     filter: blur(8px);
